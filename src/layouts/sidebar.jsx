@@ -9,9 +9,35 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, Home, Calendar, Users, Settings } from "lucide-react";
+import { CircleUser, Menu, Home, Users, Settings, Calendar } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
-import { navItems } from "../App";
+const navItems = [
+  {
+    title: "Dashboard",
+    to: "/",
+    icon: <Home className="h-4 w-4" />,
+  },
+  {
+    title: "Events",
+    to: "/events",
+    icon: <Calendar className="h-4 w-4" />,
+  },
+  {
+    title: "Create Event",
+    to: "/create-event",
+    icon: <Calendar className="h-4 w-4" />,
+  },
+  {
+    title: "Attendees",
+    to: "/attendees",
+    icon: <Users className="h-4 w-4" />,
+  },
+  {
+    title: "Settings",
+    to: "/settings",
+    icon: <Settings className="h-4 w-4" />,
+  },
+];
 
 const Layout = () => {
   return (
