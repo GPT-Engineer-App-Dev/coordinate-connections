@@ -9,8 +9,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, Home, Users, Settings, Calendar } from "lucide-react";
+import { CircleUser, Menu, Home, Users, Settings, Calendar, Ticket } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
+
 const navItems = [
   {
     title: "Dashboard",
@@ -36,6 +37,11 @@ const navItems = [
     title: "Settings",
     to: "/settings",
     icon: <Settings className="h-4 w-4" />,
+  },
+  {
+    title: "Book Ticket",
+    to: "/book-ticket",
+    icon: <Ticket className="h-4 w-4" />,
   },
 ];
 

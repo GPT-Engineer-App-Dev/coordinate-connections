@@ -9,6 +9,7 @@ import Events from "./pages/Events.jsx";
 import CreateEvent from "./pages/CreateEvent.jsx";
 import Attendees from "./pages/Attendees.jsx";
 import SettingsPage from "./pages/Settings.jsx";
+import BookTicket from "./pages/BookTicket.jsx";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,7 @@ const App = () => {
               <Route path="create-event" element={<CreateEvent />} />
               <Route path="attendees" element={<Attendees />} />
               <Route path="settings" element={<SettingsPage />} />
+              <Route path="book-ticket" element={<BookTicket />} />
             </Route>
           </Routes>
         </Router>
